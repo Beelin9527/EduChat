@@ -1,0 +1,101 @@
+/* 
+  Localizable.strings
+  EduChat
+
+  Created by apple on 12/4/15.
+  Copyright © 2015 dwd. All rights reserved.
+*/
+
+//Tabbar titles
+"TabContact" = "Sessions";
+"TabClass" = "Class";
+"TabInfo" = "Infomation";
+"TabDis" = "Discover";
+"TabMe" = "Me";
+
+//KxMenuItem titles
+"AddFriend" = "Add Friend";
+"AddGroup" = "Add Chat Group";
+"AddClass" = "Add Class";
+"Scan" = "Scan";
+"ScanDetail" = "Scan QR Code";
+"F2FCreateGroup" = "F2F Create Group";
+"Share" = "Share";
+"Collect" = "Collect";
+
+//NavigationBar titles
+"NavSearch" = "Search";
+"Contacts" = "Contacts";
+"MyCollect" = "My Collect";
+"NearingPeople" = "Nearing People";
+
+//TabviewCell Tiltes
+"MarkToRead" = "Mark read";
+"MarkToUnread" = "Mark unread";
+"Delete" = "Delete";
+
+"SearchHolder" = "Search Friends/Groups/Classes";
+"InputNumber" = "Input Your Desired Phone Number";
+"NeedSendVerifyMsg" = "Need Send Verify Msg";
+"InputVerify" = "Input your verify message";
+"MyNumber" = "My Phone Number:";
+
+"NewFriends" = "Invite";
+"Groups" = "Groups";
+"Classes" = "Classes";
+
+"Remarks" = "Remarks";
+
+"Region" = "Region:";
+"Signatorue" = "Signatorue:";
+"AccountSource" = "Source:";
+"Photos" = "Photos";
+
+//button titile
+"InviteFriends" = "Invite Friends";
+"OK" = "OK";
+"SendMsg" = "Send Message";
+"PassVerify" = "Pass Verify";
+"AddContact" = "Add Contact";
+"Reject" = "Reject";
+"Reply" = "Reply";
+"Cancel" = "Cancel";
+"Select" = "Select";
+"Send" = "Send";
+"Edit" = "Edit";
+"Hold To Speak" = "Hold To Speak";
+"photo" = "photo";
+"TakeImg" = "TakeImg";
+"Video" = "Video";
+//warning
+"NeedCorrectPhoneNo" = "Please Type A Correct Phone No.";
+"Warning" = "Warning";
+
+//newwork tips
+"Loading" = "Loading...";
+"LoadFail" = "Loading Fail, Please Retry!";
+"Sending" = "Sending";
+"SendingFail" = "Sending Fail";
+"SendingSuccess" = "Sending Success";
+"Connecting" = "Connecting";
+
+//contac cell status titls
+"Verified" = "Verified";
+"Rejected" = "Rejected";
+"Verifing" = "Verifing";
+"Accept" = "Accept";
+"Add" = "Add";
+"Invite" = "Invite";
+"MemberCount" = "(%@)";
+
+//chat controller longpress cell menu
+"Copy" = "Copy";
+"Relay" = "Relay";
+"Collect" = "Collect";
+"Delete" = "Delete";
+"More" = "More";
+"Paste" = "Paste";
+"Select" = "Select";
+"SelectAll" = "SelectAll";
+"delete" = "delete";
+"Revoke" = "Revoke";

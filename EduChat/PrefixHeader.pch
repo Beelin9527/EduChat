@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  DWDSj
+//
+//  Created by apple  on 15/10/29.
+//  Copyright © 2015年 dwd. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+// 自定义打印
+#ifdef DEBUG
+#define DWDLog(...) NSLog(__VA_ARGS__)
+#define DWDLogFunc DWDLog(@"%s", __func__)
+// 打印调试
+#else
+#define DWDLog(...)
+#define DWDLogFunc
+#endif
+
+
+// 常量
+#import "DWDConst.h"
+
+/**请定义宏 在这个class里设置  麻烦了  请给这里一片净土 */
+#import "Macros.h"
+
+
+
+
+#endif /* PrefixHeader_pch */

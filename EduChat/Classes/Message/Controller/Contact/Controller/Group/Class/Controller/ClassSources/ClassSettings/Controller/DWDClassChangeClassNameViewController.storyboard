@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Class Change Class Name View Controller-->
+        <scene sceneID="aRf-oj-acI">
+            <objects>
+                <viewController storyboardIdentifier="DWDClassChangeClassNameViewController" id="6g8-b3-hcU" customClass="DWDClassChangeClassNameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FnB-Cv-BLD"/>
+                        <viewControllerLayoutGuide type="bottom" id="T4l-ku-xXd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kNz-uI-TJh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PP5-YJ-6tk">
+                                <rect key="frame" x="0.0" y="50" width="320" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入班级名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y1t-wu-wsH">
+                                        <rect key="frame" x="10" y="7" width="295" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="YVI-fe-gFU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="6g8-b3-hcU" id="EKo-TK-H4g"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Y1t-wu-wsH" firstAttribute="leading" secondItem="PP5-YJ-6tk" secondAttribute="leading" constant="10" id="4Kl-IZ-ogT"/>
+                                    <constraint firstItem="Y1t-wu-wsH" firstAttribute="centerY" secondItem="PP5-YJ-6tk" secondAttribute="centerY" id="6Q7-oi-xIr"/>
+                                    <constraint firstAttribute="height" constant="44" id="kEZ-GP-qK6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y1t-wu-wsH" secondAttribute="trailing" constant="15" id="yQ1-Kh-Jpc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更改班级昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVu-a2-xCJ">
+                                <rect key="frame" x="10" y="25" width="84" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431606292725" green="0.96078431606292725" blue="0.96078431606292725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PP5-YJ-6tk" firstAttribute="leading" secondItem="kNz-uI-TJh" secondAttribute="leading" id="Atd-dv-elc"/>
+                            <constraint firstItem="PP5-YJ-6tk" firstAttribute="top" secondItem="FnB-Cv-BLD" secondAttribute="bottom" constant="30" id="Q6s-bY-Evv"/>
+                            <constraint firstAttribute="trailing" secondItem="PP5-YJ-6tk" secondAttribute="trailing" id="aHn-Hs-6bh"/>
+                            <constraint firstItem="jVu-a2-xCJ" firstAttribute="top" secondItem="FnB-Cv-BLD" secondAttribute="bottom" constant="5" id="sRA-Np-RIn"/>
+                            <constraint firstItem="jVu-a2-xCJ" firstAttribute="leading" secondItem="kNz-uI-TJh" secondAttribute="leading" constant="10" id="wiy-13-gEI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfdNickname" destination="Y1t-wu-wsH" id="gvG-qz-awK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vim-F1-zXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="192"/>
+        </scene>
+    </scenes>
+</document>

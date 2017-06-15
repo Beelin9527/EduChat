@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Educhat Account Setup View Controller-->
+        <scene sceneID="9MA-KY-ap9">
+            <objects>
+                <viewController storyboardIdentifier="DWDEduchatAccountSetupViewController" id="6SO-6y-eUB" customClass="DWDEduchatAccountSetupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8WR-zu-XpB"/>
+                        <viewControllerLayoutGuide type="bottom" id="gdf-4W-uDH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SXK-Y1-wXD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1R-Ur-NCD">
+                                <rect key="frame" x="0.0" y="30" width="320" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="6-16位字母、数字组合(区分大小写)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eUW-9l-MEp">
+                                        <rect key="frame" x="15" y="13" width="290" height="19"/>
+                                        <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="6SO-6y-eUB" id="IGq-rj-REV"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="eUW-9l-MEp" firstAttribute="centerY" secondItem="q1R-Ur-NCD" secondAttribute="centerY" id="84X-22-L8N"/>
+                                    <constraint firstAttribute="trailing" secondItem="eUW-9l-MEp" secondAttribute="trailing" constant="15" id="gPJ-8e-hYT"/>
+                                    <constraint firstItem="eUW-9l-MEp" firstAttribute="leading" secondItem="q1R-Ur-NCD" secondAttribute="leading" constant="15" id="jk5-25-Do9"/>
+                                    <constraint firstAttribute="height" constant="44" id="qnI-n3-7bg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="多维度号设置后将无法修改，打造属于您的独一无二。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEa-Gm-UkY">
+                                <rect key="frame" x="16" y="82" width="289" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431606292725" green="0.96078431606292725" blue="0.96078431606292725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZEa-Gm-UkY" firstAttribute="top" secondItem="q1R-Ur-NCD" secondAttribute="bottom" constant="10" id="E6Q-q8-eef"/>
+                            <constraint firstAttribute="trailing" secondItem="q1R-Ur-NCD" secondAttribute="trailing" id="HYF-du-gFZ"/>
+                            <constraint firstItem="ZEa-Gm-UkY" firstAttribute="leading" secondItem="SXK-Y1-wXD" secondAttribute="leading" constant="15" id="RF4-e1-8St"/>
+                            <constraint firstAttribute="trailing" secondItem="ZEa-Gm-UkY" secondAttribute="trailing" constant="16" id="Ynl-ad-CYY"/>
+                            <constraint firstItem="q1R-Ur-NCD" firstAttribute="leading" secondItem="SXK-Y1-wXD" secondAttribute="leading" id="f5d-pD-bzj"/>
+                            <constraint firstItem="q1R-Ur-NCD" firstAttribute="top" secondItem="8WR-zu-XpB" secondAttribute="bottom" constant="10" id="r7l-LQ-SgC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfEduchatName" destination="eUW-9l-MEp" id="hxu-xu-C1k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kb5-S8-Ukf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="326"/>
+        </scene>
+    </scenes>
+</document>

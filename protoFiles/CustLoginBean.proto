@@ -1,0 +1,15 @@
+package proto;
+
+option java_package = "com.leederedu.educhat.bean";
+option java_outer_classname = "CustLoginBean";
+//登录
+message CustLogin {
+
+  optional  int64 id = 1;  // id
+  required string devinfos = 2; // 设备号
+  required string userName = 3; // 用户名字
+  required string pwd = 4; // 密码
+  required string platform = 5;// 平台(ios or android)
+  optional string version = 6;// 版本
+
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Grow Up Record Upload Record Controller-->
+        <scene sceneID="jDh-sS-6Uc">
+            <objects>
+                <viewController storyboardIdentifier="DWDGrowUpRecordUploadRecordController" id="QQT-cb-gGw" customClass="DWDGrowUpRecordUploadRecordController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hvR-rr-2sp"/>
+                        <viewControllerLayoutGuide type="bottom" id="nCC-c8-43q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IPE-ec-xlK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DXq-Ui-xJd" customClass="DWDPlaceholderTextView">
+                                <rect key="frame" x="0.0" y="40" width="600" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="YyX-bD-zj0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPF-Jt-T9a">
+                                <rect key="frame" x="0.0" y="150" width="600" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ofu-T6-da4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gcj-JN-QJn">
+                                <rect key="frame" x="0.0" y="298" width="600" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同时需要上传至" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="al7-hD-LVt">
+                                        <rect key="frame" x="10" y="11" width="119" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择上传的相册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HU-m5-eFF">
+                                        <rect key="frame" x="440" y="11" width="136" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_clickable_normal" translatesAutoresizingMaskIntoConstraints="NO" id="bqZ-jl-VBV">
+                                        <rect key="frame" x="576" y="11" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="oBq-67-jql"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="al7-hD-LVt" firstAttribute="centerY" secondItem="Gcj-JN-QJn" secondAttribute="centerY" id="AAF-sx-RF0"/>
+                                    <constraint firstAttribute="height" constant="44" id="MyO-Z1-1bz"/>
+                                    <constraint firstAttribute="trailing" secondItem="bqZ-jl-VBV" secondAttribute="trailing" constant="2.5" id="WW1-iu-xSo"/>
+                                    <constraint firstItem="al7-hD-LVt" firstAttribute="leading" secondItem="Gcj-JN-QJn" secondAttribute="leading" constant="10" id="aUC-3e-Pfa"/>
+                                    <constraint firstItem="bqZ-jl-VBV" firstAttribute="top" secondItem="Gcj-JN-QJn" secondAttribute="top" constant="11" id="kqq-Oy-83t"/>
+                                    <constraint firstAttribute="bottom" secondItem="bqZ-jl-VBV" secondAttribute="bottom" constant="11" id="pLh-aG-Jej"/>
+                                    <constraint firstItem="0HU-m5-eFF" firstAttribute="centerY" secondItem="Gcj-JN-QJn" secondAttribute="centerY" id="rlp-zp-KEb"/>
+                                    <constraint firstItem="bqZ-jl-VBV" firstAttribute="leading" secondItem="0HU-m5-eFF" secondAttribute="trailing" id="zlm-B7-vIY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gcj-JN-QJn" firstAttribute="leading" secondItem="IPE-ec-xlK" secondAttribute="leading" id="CCo-mW-09b"/>
+                            <constraint firstItem="DXq-Ui-xJd" firstAttribute="top" secondItem="hvR-rr-2sp" secondAttribute="bottom" constant="20" id="J92-CW-IPL"/>
+                            <constraint firstItem="SPF-Jt-T9a" firstAttribute="top" secondItem="DXq-Ui-xJd" secondAttribute="bottom" constant="10" id="PZK-4n-KdV"/>
+                            <constraint firstItem="SPF-Jt-T9a" firstAttribute="leading" secondItem="IPE-ec-xlK" secondAttribute="leading" id="X9o-Uy-FpO"/>
+                            <constraint firstItem="DXq-Ui-xJd" firstAttribute="leading" secondItem="IPE-ec-xlK" secondAttribute="leading" id="ew2-OY-jsW"/>
+                            <constraint firstAttribute="trailing" secondItem="SPF-Jt-T9a" secondAttribute="trailing" id="fRW-LB-DZA"/>
+                            <constraint firstItem="Gcj-JN-QJn" firstAttribute="top" secondItem="SPF-Jt-T9a" secondAttribute="bottom" constant="20" id="pOr-1U-dMv"/>
+                            <constraint firstAttribute="trailing" secondItem="Gcj-JN-QJn" secondAttribute="trailing" id="pqy-z3-5Sc"/>
+                            <constraint firstAttribute="trailing" secondItem="DXq-Ui-xJd" secondAttribute="trailing" id="vsp-F6-My6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomContainer" destination="Gcj-JN-QJn" id="sLY-a4-NlE"/>
+                        <outlet property="chooseAlbumContainer" destination="Gcj-JN-QJn" id="QWI-Ev-MHL"/>
+                        <outlet property="midContainer" destination="SPF-Jt-T9a" id="vAa-o7-Kui"/>
+                        <outlet property="midContainerHeightCons" destination="ofu-T6-da4" id="Omh-GF-RH4"/>
+                        <outlet property="topTextView" destination="DXq-Ui-xJd" id="33A-Je-ee7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EeN-Kn-YDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_clickable_normal" width="22" height="22"/>
+    </resources>
+</document>

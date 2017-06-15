@@ -1,0 +1,21 @@
+package proto;
+
+option java_package = "com.leederedu.educhat.bean";
+option java_outer_classname = "UndoMessageBean";
+//撤销消息
+message  UndoMessage{
+
+  required string msgId = 1;   // 消息id
+  required int32 type   = 2;   // 撤销或删除 (1删除，2撤销)
+  required int64 tid    = 3;   // 接收者id (個人,群組,班級)
+  required int32 chatType = 4; //班级，群组，个人 
+  required string uuid   =5;      //系統消息uuid
+  required  bool isRead  = 6;//是否已读
+  required  int64 memberId =7;//接收人id
+  required  int64 createTime=8;//消息创建时间
+  required string name   =9;//发送人名字 
+  
+  
+}
+
+

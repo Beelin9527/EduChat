@@ -1,0 +1,24 @@
+package proto;
+
+option java_package = "com.leederedu.educhat.bean";
+option java_outer_classname = "ImageBean";
+
+import "PhotoBean.proto";  
+//图片信息(一对一，群组聊天，班级聊天)
+message  ImageMsg{
+
+  required string msgId=1;//消息id
+  required int64 ts = 2;   // 時間戳
+  required ImageEntity entity=3;//消息類型
+  
+}
+
+
+message ImageEntity {
+
+  required int64 fid = 1; // 发送者id
+  required int64 tid = 2; // 接受者id
+  required Photo photo=3; //图片对象
+ 
+    
+}

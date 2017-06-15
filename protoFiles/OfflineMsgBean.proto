@@ -1,0 +1,18 @@
+package proto;
+
+option java_package = "com.leederedu.educhat.bean";
+option java_outer_classname = "OfflineBean";
+//离线消息
+message  OfflineMsgs{
+repeated Msg msg=1;//消息類型
+}
+
+
+message Msg {
+  required string msgId = 1; // 信息id
+  required int64 ts = 2;   // 時間戳
+  required int64 cmd=3;//通草
+  required string entity = 4; //消息實體
+}
+
+

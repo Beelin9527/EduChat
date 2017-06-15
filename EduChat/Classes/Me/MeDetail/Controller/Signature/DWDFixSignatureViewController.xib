@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DWDFixSignatureViewController">
+            <connections>
+                <outlet property="labFalg" destination="dpI-d7-Rda" id="prV-Ex-Bpq"/>
+                <outlet property="signature" destination="DvC-PL-BN6" id="omr-7K-ez7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KV9-Yr-7eE">
+                    <rect key="frame" x="0.0" y="15" width="320" height="100"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DvC-PL-BN6">
+                            <rect key="frame" x="10" y="10" width="300" height="65"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="5Ro-PH-FXM"/>
+                            </constraints>
+                            <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="mC4-ob-s6n"/>
+                            </connections>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpI-d7-Rda">
+                            <rect key="frame" x="235" y="74" width="70" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="bJh-of-0TR"/>
+                                <constraint firstAttribute="width" constant="70" id="dRF-0m-Y1T"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="dpI-d7-Rda" secondAttribute="bottom" constant="5" id="7eT-Ys-bR2"/>
+                        <constraint firstAttribute="trailing" secondItem="DvC-PL-BN6" secondAttribute="trailing" constant="10" id="Hke-rJ-SbD"/>
+                        <constraint firstAttribute="trailing" secondItem="dpI-d7-Rda" secondAttribute="trailing" constant="15" id="LxV-HP-Zfn"/>
+                        <constraint firstAttribute="height" constant="100" id="a4v-vi-dx2"/>
+                        <constraint firstItem="DvC-PL-BN6" firstAttribute="leading" secondItem="KV9-Yr-7eE" secondAttribute="leading" constant="10" id="bpC-V8-H4W"/>
+                        <constraint firstItem="DvC-PL-BN6" firstAttribute="top" secondItem="KV9-Yr-7eE" secondAttribute="top" constant="10" id="tAu-9h-cvX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431606292725" green="0.96078431606292725" blue="0.96078431606292725" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="KV9-Yr-7eE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="QOI-V5-Urv"/>
+                <constraint firstAttribute="trailing" secondItem="KV9-Yr-7eE" secondAttribute="trailing" id="vGX-3n-PWK"/>
+                <constraint firstItem="KV9-Yr-7eE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xo9-Ik-aZF"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

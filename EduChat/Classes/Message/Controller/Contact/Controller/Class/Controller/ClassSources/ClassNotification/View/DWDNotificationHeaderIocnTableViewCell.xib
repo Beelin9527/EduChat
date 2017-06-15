@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="83" id="KGk-i7-Jjw" customClass="DWDNotificationHeaderIocnTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20人" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wR-62-782">
+                        <rect key="frame" x="250" y="10" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="atO-SF-5US"/>
+                            <constraint firstAttribute="width" constant="60" id="lYM-86-oAY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已读" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbo-8L-IAA">
+                        <rect key="frame" x="10" y="10" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="bmR-5P-ntR"/>
+                            <constraint firstAttribute="height" constant="21" id="u0e-cb-2BQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bbo-8L-IAA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Dp0-Hb-LYW"/>
+                    <constraint firstItem="bbo-8L-IAA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Uqj-WP-XMw"/>
+                    <constraint firstAttribute="trailing" secondItem="4wR-62-782" secondAttribute="trailing" constant="10" id="oaY-Fl-Yjx"/>
+                    <constraint firstItem="4wR-62-782" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uOc-Rr-lPt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="229" y="261.5"/>
+        </tableViewCell>
+    </objects>
+</document>

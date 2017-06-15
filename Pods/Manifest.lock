@@ -1,0 +1,93 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AliyunOSSiOS (2.5.3)
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
+  - CustomIOSAlertView (0.9.5)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - JFImagePicker (1.0.0)
+  - KMNavigationBarTransition (0.0.8)
+  - Masonry (1.0.2)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.0)
+  - Protobuf (3.1.0)
+  - SDVersion (3.6)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - UICKeyChainStore (2.1.0)
+  - UMengAnalytics (4.0.2)
+  - UMengSocialCOM (5.1.0)
+  - YYModel (1.0.3)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - AliyunOSSiOS (~> 2.5.2)
+  - CocoaAsyncSocket (= 7.4.3)
+  - CustomIOSAlertView (~> 0.9.3)
+  - FMDB (= 2.6.2)
+  - JFImagePicker (= 1.0.0)
+  - KMNavigationBarTransition (= 0.0.8)
+  - Masonry (~> 1.0.0)
+  - MBProgressHUD (~> 0.9.1)
+  - MJRefresh (= 3.1.0)
+  - Protobuf (~> 3.1.0)
+  - SDVersion
+  - SDWebImage (~> 3.7)
+  - UICKeyChainStore
+  - UMengAnalytics (= 4.0.2)
+  - UMengSocialCOM (~> 5.1.0)
+  - YYModel (= 1.0.3)
+  - YYText (~> 1.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AliyunOSSiOS: 80e7617a5f4b5af50888a8946f6a744726032972
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  CustomIOSAlertView: cc4fa8e36219be3fd5ebcd40789f5b4aaae0f38e
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  JFImagePicker: 2914c69dac80767a98664e768ac50118664e9f04
+  KMNavigationBarTransition: e87fb2b3a194b0d7fded5fd560df83c6f43b942f
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  Protobuf: 265e9977d04a83eba9cefb0bed3ad07e41033b4a
+  SDVersion: 43383b6ac05462c973c3fd92d9748c74e360aba5
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
+  UMengAnalytics: ecddd7b9545804a980446fe0d691f7ae8694516f
+  UMengSocialCOM: 8fa4732b03757161aaa8aab97be7d980adb9ccdb
+  YYModel: 63142c2f07c5c8c9d1c261689cf3827ea6ab2886
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 0e63d47e49824e82778f056b206f2533fce533f5
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Class Introduce View Controller-->
+        <scene sceneID="Eon-u3-bHj">
+            <objects>
+                <viewController storyboardIdentifier="DWDClassIntroduceViewController" id="wui-8a-b7R" customClass="DWDClassIntroduceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R3Y-0N-zGi"/>
+                        <viewControllerLayoutGuide type="bottom" id="hU4-07-l1z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fOl-ra-yYh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="班级介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SP0-oK-0hs">
+                                <frame key="frameInset" minX="10" minY="30" width="64" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bTT-Cf-hjB">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="WT6-wi-9SK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="wui-8a-b7R" id="ULW-Rs-cyb"/>
+                                </connections>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/300" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI7-9S-WIp">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="bRY-4x-Gdp"/>
+                                    <constraint firstAttribute="height" constant="21" id="vhZ-kq-AIr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431606292725" green="0.96078431606292725" blue="0.96078431606292725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bTT-Cf-hjB" firstAttribute="leading" secondItem="fOl-ra-yYh" secondAttribute="leading" id="0tY-BJ-BcQ"/>
+                            <constraint firstItem="SP0-oK-0hs" firstAttribute="leading" secondItem="fOl-ra-yYh" secondAttribute="leading" constant="10" id="1sZ-mk-UdT"/>
+                            <constraint firstItem="gI7-9S-WIp" firstAttribute="top" secondItem="bTT-Cf-hjB" secondAttribute="bottom" constant="8" id="3hk-eP-CTl"/>
+                            <constraint firstItem="SP0-oK-0hs" firstAttribute="top" secondItem="R3Y-0N-zGi" secondAttribute="bottom" constant="10" id="QLl-nb-Gs6"/>
+                            <constraint firstAttribute="trailing" secondItem="bTT-Cf-hjB" secondAttribute="trailing" id="VxF-7z-bCO"/>
+                            <constraint firstItem="bTT-Cf-hjB" firstAttribute="top" secondItem="SP0-oK-0hs" secondAttribute="bottom" constant="5" id="WsC-tQ-9Ms"/>
+                            <constraint firstAttribute="trailing" secondItem="gI7-9S-WIp" secondAttribute="trailing" constant="12" id="lne-W6-36E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="introTextView" destination="bTT-Cf-hjB" id="eHH-1G-rrj"/>
+                        <outlet property="textLenghtLabel" destination="gI7-9S-WIp" id="CLL-Nl-PE0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j6S-th-t98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="382"/>
+        </scene>
+    </scenes>
+</document>

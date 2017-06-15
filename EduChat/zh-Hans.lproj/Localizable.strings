@@ -1,0 +1,103 @@
+/* 
+  Localizable.strings
+  EduChat
+
+  Created by apple on 12/4/15.
+  Copyright © 2015 dwd. All rights reserved.
+*/
+
+//Tabbar titles
+"TabContact" = "联系";
+"TabClass" = "班级";
+"TabInfo" = "资讯";
+"TabDis" = "发现";
+"TabMe" = "我";
+
+//KxMenuItem titles
+"AddFriend" = "添加朋友";
+"AddGroup" = "添加群组";
+"AddClass" = "新建班级";
+"JoinClass" = "加入班级";
+"Scan" = "扫一扫";
+"ScanDetail" = "扫描二维码";
+"F2FCreateGroup" = "面对面建群";
+"Share" = "分享";
+"Collect" = "收藏";
+
+
+//NavigationBar titles
+"NavSearch" = "搜索";
+"Contacts" = "通讯录";
+"MyCollect" = "我的收藏";
+"NearingPeople" = "附近的人";
+
+//TabviewCell Tiltes
+"MarkToRead" = "标记为已读";
+"MarkToUnread" = "标记为未读";
+"Delete" = "删除";
+
+"SearchHolder" = "搜索 好友/群组/班级";
+"InputNumber" = "请输入手机号/多维度号";
+"NeedSendVerifyMsg" = "需要发送申请验证，等待对方通过";
+"InputVerify" = "请输入验证信息";
+"MyNumber" = "我的手机号码：";
+
+"NewFriends" = "新的朋友";
+"Groups" = "群组";
+"Classes" = "班级";
+
+"Remarks" = "备注好友";
+
+"Region" = "地区：";
+"Signatorue" = "个性签名：";
+"AccountSource" = "来源：";
+"Photos" = "个人相册";
+
+//button titile
+"InviteFriends" = "邀请朋友";
+"OK" = "知道了";
+"SendMsg" = "发送消息";
+"PassVerify" = "通过验证";
+"AddContact" = "添加到通讯录";
+"Reject" = "拒绝";
+"Reply" = "回复";
+"Cancel" = "取消";
+"Select" = "选择";
+"Send" = "发送";
+"Edit" = "编辑";
+"Hold To Speak" = "按住说话";
+"photo" = "相册";
+"TakeImg" = "拍照";
+"Video" = "小视频";
+
+//warning
+"NeedCorectPhoneNo" = "请输入正确的手机号";
+"Warning" = "警告";
+
+//newwork tips
+"Loading" = "正在加载...";
+"LoadFail" = "加载失败，请稍后重试！";
+"Sending" = "发送中";
+"SendingFail" = "发送失败，请重试";
+"SendingSuccess" = "发送成功";
+"Connecting" = "连接中...";
+//contac cell status titls
+"Verified" = "已添加";
+"Rejected" = "已拒绝";
+"Verifing" = "等待验证";
+"Accept" = "接受";
+"Add" = "添加";
+"Invite" = "邀请";
+"MemberCount" = "(%@人)";
+
+//chat controller longpress cell menu
+"Copy" = "复制";
+"Relay" = "转发";
+"Collect" = "收藏";
+"Delete" = "删除";
+"More" = "更多";
+"Paste" = "粘贴";
+"Select" = "选择";
+"SelectAll" = "全选";
+"delete" = "删除选中";
+"Revoke" = "撤销";

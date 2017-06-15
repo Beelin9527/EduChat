@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--My Child Fix Child Name View Controller-->
+        <scene sceneID="KeE-hq-EhC">
+            <objects>
+                <viewController storyboardIdentifier="DWDMyChildFixChildNameViewController" id="pq1-dx-TtR" customClass="DWDMyChildFixChildNameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5vd-RK-xEf"/>
+                        <viewControllerLayoutGuide type="bottom" id="4W0-70-aDl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S5b-6E-ZDX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NzM-bK-qNZ">
+                                <rect key="frame" x="0.0" y="65" width="320" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-4T-Ce7">
+                                        <rect key="frame" x="15" y="12" width="290" height="17"/>
+                                        <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="pq1-dx-TtR" id="JbT-5I-ClV"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aDf-4T-Ce7" secondAttribute="trailing" constant="15" id="2Ia-kf-gcK"/>
+                                    <constraint firstItem="aDf-4T-Ce7" firstAttribute="centerX" secondItem="NzM-bK-qNZ" secondAttribute="centerX" id="D53-TI-AoF"/>
+                                    <constraint firstAttribute="height" constant="40" id="WGH-Cv-lvu"/>
+                                    <constraint firstItem="aDf-4T-Ce7" firstAttribute="centerY" secondItem="NzM-bK-qNZ" secondAttribute="centerY" id="imW-ff-DVv"/>
+                                    <constraint firstItem="aDf-4T-Ce7" firstAttribute="leading" secondItem="NzM-bK-qNZ" secondAttribute="leading" constant="15" id="jxq-Mq-iz2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="孩子姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs5-xf-Zyk">
+                                <rect key="frame" x="15" y="40" width="56" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431606292725" green="0.96078431606292725" blue="0.96078431606292725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NzM-bK-qNZ" firstAttribute="top" secondItem="Vs5-xf-Zyk" secondAttribute="bottom" constant="8" id="6kN-SO-1gp"/>
+                            <constraint firstAttribute="trailing" secondItem="NzM-bK-qNZ" secondAttribute="trailing" id="GI0-gL-6Uf"/>
+                            <constraint firstItem="Vs5-xf-Zyk" firstAttribute="top" secondItem="5vd-RK-xEf" secondAttribute="bottom" constant="20" id="P4b-h8-SU3"/>
+                            <constraint firstItem="Vs5-xf-Zyk" firstAttribute="leading" secondItem="S5b-6E-ZDX" secondAttribute="leading" constant="15" id="yYL-yH-jgr"/>
+                            <constraint firstItem="NzM-bK-qNZ" firstAttribute="leading" secondItem="S5b-6E-ZDX" secondAttribute="leading" id="z5m-QW-Zq8"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="childNameTextField" destination="aDf-4T-Ce7" id="7hj-3s-yqv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnf-I3-ZLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256" y="381"/>
+        </scene>
+    </scenes>
+</document>

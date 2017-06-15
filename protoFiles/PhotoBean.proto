@@ -1,0 +1,17 @@
+package proto;
+
+option java_package = "com.leederedu.educhat.bean";
+option java_outer_classname = "PhotoBean";
+//图片对象
+message  Photo{
+
+  required string pkey=1;//图片地址
+  required int32 w = 2;   // 宽
+  required int32 h = 3;   // 高
+  required int32 sz = 4;   // 大小
+  required int32 fmt = 5;   // 格式
+
+
+}
+
+

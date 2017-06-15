@@ -1,0 +1,29 @@
+package proto;
+
+option java_package = "com.leederedu.educhat.bean";
+option java_outer_classname = "PickUpBean";
+//打卡信息
+message  PickUpMsg{
+
+  required string msgId=1;//消息id
+  required int64 ts = 2;   // 時間戳
+  required PickUpEntity entity=3;//消息实体
+}
+
+
+message PickUpEntity {
+
+  required int64 cgid = 1; // 班级id
+  required string contextual=2;//情景状态
+  required int64 ts=3;    //时间戳
+  required int64 pid = 4;   // 接送父母用户id
+  required string photo = 5; //打卡照片
+  required int32 idx = 6; //上学放学时间段序号
+  required int32 typ = 7; //打卡类型
+  required int32 rlat = 8; //父母孩子关系
+  required int64 thid = 9;   // 老师用户ID
+  required int64 sid = 10;   // 学校用户ID
+  required int64 chid = 11;   // 孩子用户ID 
+  required int64 tid=12;     // 接收者id
+    
+}
